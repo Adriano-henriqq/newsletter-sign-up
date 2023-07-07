@@ -1,0 +1,150 @@
+:root{
+    --cinza-escuro:hsl(234, 29%, 20%);
+    --cinza-escuro-claro:hsl(235, 18%, 26%);
+    --cinza:hsl(231, 7%, 60%);
+     --branco:hsl(0, 0%, 100%);
+     --font-principal: 'Roboto', sans-serif;
+     --vemelho-tomate:hsl(4, 100%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-principal);
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container__img img{
+   width: 100vw;
+}
+.img__desktop{
+    display: none;
+}
+
+
+.container__titulo{
+    margin: 1.5rem 0 1rem 1rem;
+    font-size: 32px;
+}
+.container__texto{
+    font-size: 16px;
+    padding-left: .5rem;
+}
+
+.textos{
+   display: flex;
+   gap: 10px;
+   margin-left: 1rem;
+   padding-bottom: 1rem;
+   width: 90%;
+}
+
+.container__desc{
+    font-size: 16px;
+    margin: 1rem 0 1rem 1rem;
+
+}
+.texto__last{
+    padding-top: .5rem;
+}
+
+.mensagem__erro{
+    background-color: #ffaaaac6;
+    color: var(--vemelho-tomate);
+    opacity: 80%;
+    border: 1px solid #ff5c3ce8;
+}
+.mensagem__erro::placeholder{
+    color: var(--vemelho-tomate);
+}
+.m_erro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.erro{
+    color: red;
+    font-size: 15px;
+    margin-right: 1.5rem
+   
+    
+}
+
+@media screen and (min-width:768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        background: var(--cinza-escuro-claro);
+        align-items: center;
+        flex-direction: column;
+
+        
+    }
+    
+    section{
+        display: flex;
+        background-color: var(--branco);
+        max-width: 800px;
+        width: 100%;
+        padding: 1rem 1rem 1rem .5rem;
+        margin-top: 5rem;
+        border-radius: 16px;
+        height: 550px;
+    }
+    .container{
+        flex-direction: row;
+        background-color: var(--branco);
+        justify-content: flex-start;
+        align-items: center; 
+        padding: 0 1rem 0 .5rem;
+    }
+
+    .container__titulo{
+        font-size: 3rem;
+        margin: 1.5rem 0 0 1rem;
+    }
+    .container__img{
+        display: none;
+    }
+    .textos{
+        width: 100%;
+        padding-bottom: 0;
+        
+        
+    }
+    .img__desktop{
+        display: block;
+        width: 350px;
+        border-radius: 0;
+
+    }
+    .texto__last{
+        padding-top: 0;
+    }
+    .container__texto{
+        font-size: 15px; 
+        padding-left: 0;
+    }
+    .m_erro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .erro{
+        margin-right: 1.5rem;
+    }
+}

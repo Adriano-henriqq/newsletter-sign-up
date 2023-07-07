@@ -1,0 +1,79 @@
+@import url(./style.css);
+
+
+body{
+    font-family: var(--font-principal);
+    
+}
+.container__sucess{
+    margin-top: 7rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    font-size: 48px;
+    
+}
+
+.container__img{
+    width: 70px;
+    margin-bottom: 2em;
+}
+
+.btn__sucess{
+    width: 90%;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 1.3rem;
+    border-radius: 10px;
+    margin-top: 16rem;
+    margin-right: 1rem;
+}
+p{
+    padding: .5rem;
+    line-height: 1.5rem;
+    max-width: 375px;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .container__sucess{
+        max-width: 400px;
+        height: 400px;
+        padding: 1.5rem;
+        
+    }
+
+    .container__img{
+        display: block;
+        margin-top: 2.5rem;
+        padding: 0;
+        width: 50px;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+    p{
+        max-width: none;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .btn__sucess{
+        margin-top: 1rem;
+        margin-right: 0;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .btn__sucess:hover{
+        background: linear-gradient(82deg, rgba(255,98,87,1) 45%, rgba(244, 132, 51, 0.959) 73%);
+    }
+}
